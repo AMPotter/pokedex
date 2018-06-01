@@ -2,7 +2,7 @@
     <div>
         <li v-if="pokemon.type_1 === filter.type || pokemon.type_2 === filter.type || !filter.type">
             <img :src="pokemon.url_image">
-            <h3>{{pokemon.pokemon}}</h3>
+            <h3>No. {{pokemon.id}}: {{pokemon.pokemon}}</h3>
             <ul>
                 <li>HP: {{pokemon.hp}}</li>
                 <li>Type: {{pokemon.type_1}}</li>
