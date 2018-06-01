@@ -1,17 +1,30 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <Results :pokemonTiles="pokemonList"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import pokemon from './data/pokemon.js'
+import Header from './components/Header.vue'
+import Results from './components/Results.vue'
 
 export default {
-  name: 'app',
+  data() {
+    return {
+      pokemonList: pokemon,
+      selected: null
+    }
+  },
   components: {
-    HelloWorld
+    Header,
+    Results
+  },
+  methods: {
+    updateSelected(pokemon) {
+      this.selected = pokemon;
+    }
   }
 }
 </script>
