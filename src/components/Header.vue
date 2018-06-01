@@ -12,17 +12,10 @@ import SearchFilter from './SearchFilter.vue';
 import Sort from './Sort.vue';
 
 export default {
-  data() {
-    return {
-      filter: {
-        type: String,
-        minAttack: Number,
-      }
-    };
-  },
   components: {
     SearchFilter,
     Sort
-  }
+  },
+  props: ['filter']
 };
 </script>

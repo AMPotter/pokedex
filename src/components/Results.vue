@@ -6,6 +6,7 @@
                 v-for="pokemon in pokemonTiles"
                 v-bind:key="pokemon.id"
                 :pokemon="pokemon"
+                :filter="filter"
             />
         </ul>
     </div>
@@ -15,7 +16,7 @@
 import Tile from './Tile.vue';
 
 export default {
-  props: ['pokemonTiles'],
+  props: ['pokemonTiles', 'filter'],
   components: {
     Tile
   }

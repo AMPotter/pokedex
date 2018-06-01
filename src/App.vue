@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Header />
-    <Results :pokemonTiles="pokemonList"/>
+    <Header :filter="filter"/>
+    <Results :filter="filter" :pokemonTiles="pokemonList"/>
   </div>
 </template>
 
@@ -14,7 +14,9 @@ export default {
   data() {
     return {
       pokemonList: pokemon,
-      selected: null
+      filter: {
+        type: null
+      }
     };
   },
   components: {
@@ -22,8 +24,8 @@ export default {
     Results
   },
   methods: {
-    updateSelected(pokemon) {
-      this.selected = pokemon;
+    applyTypeFilter() {
+
     }
   }
 };
