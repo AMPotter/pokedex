@@ -18,6 +18,9 @@
   "plugins": [
     "html"
   ],
+  "settings": {
+      "html/html-extensions": [".html"]
+    },
   "rules": {
     "eqeqeq": ["error", "always"],
     "no-console": "off",

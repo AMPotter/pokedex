@@ -26,7 +26,7 @@
 </template>
 
 <script>
-    export default {
-        props: ['filter']
-    }
+export default {
+  props: ['filter']
+};
 </script>

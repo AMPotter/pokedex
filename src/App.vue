@@ -6,16 +6,16 @@
 </template>
 
 <script>
-import pokemon from './data/pokemon.js'
-import Header from './components/Header.vue'
-import Results from './components/Results.vue'
+import pokemon from './data/pokemon.js';
+import Header from './components/Header.vue';
+import Results from './components/Results.vue';
 
 export default {
   data() {
     return {
       pokemonList: pokemon,
       selected: null
-    }
+    };
   },
   components: {
     Header,
@@ -26,7 +26,7 @@ export default {
       this.selected = pokemon;
     }
   }
-}
+};
 </script>
 
 <style>

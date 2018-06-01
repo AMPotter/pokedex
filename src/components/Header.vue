@@ -8,21 +8,21 @@
 </template>
 
 <script>
-import SearchFilter from './SearchFilter.vue'
-import Sort from './Sort.vue'
+import SearchFilter from './SearchFilter.vue';
+import Sort from './Sort.vue';
 
 export default {
-    data() {
-        return {
-            filter: {
-                type: String,
-                minAttack: Number,
-            }
-        }
-    },
-    components: {
-        SearchFilter,
-        Sort
-    }
-}
+  data() {
+    return {
+      filter: {
+        type: String,
+        minAttack: Number,
+      }
+    };
+  },
+  components: {
+    SearchFilter,
+    Sort
+  }
+};
 </script>

@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import Tile from "./Tile.vue";
+import Tile from './Tile.vue';
 
 export default {
-    props: ['pokemonTiles'],
-    components: {
-        Tile
-    }
-}
+  props: ['pokemonTiles'],
+  components: {
+    Tile
+  }
+};
 </script>

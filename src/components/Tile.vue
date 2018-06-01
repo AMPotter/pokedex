@@ -1,11 +1,11 @@
 <template>
     <li>
-        <h5>{{pokemon.pokemon}}</h5>
+        <h3>{{pokemon.pokemon}}</h3>
     </li>
 </template>
 
 <script>
 export default {
-    props: ['pokemon']
-}
+  props: ['pokemon']
+};
 </script>
