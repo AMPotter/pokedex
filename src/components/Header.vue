@@ -1,21 +1,15 @@
 <template>
-    <main>
-        <h1>Pokedex</h1>
-        <section class="controls">
-            <SearchFilter :filter="filter" />
-        </section>
-    </main>
+  <header>
+    <Sort :sort="sort"/>
+    <FilterControl :filter="filter" :types="types"/>
+  </header>
 </template>
 
 <script>
-import SearchFilter from './SearchFilter.vue';
-import Sort from './Sort.vue';
-
+import Sort from './Sort';
+import FilterControl from './FilterControl';
 export default {
-  components: {
-    SearchFilter,
-    Sort
-  },
-  props: ['filter']
+  components: { Sort, FilterControl },
+  props: ['sort', 'filter', 'types']
 };
 </script>

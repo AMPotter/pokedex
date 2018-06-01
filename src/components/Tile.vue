@@ -1,24 +1,47 @@
 <template>
-    <div>
-        <li v-if="pokemon.type_1 === filter.type || pokemon.type_2 === filter.type || !filter.type">
-            <img :src="pokemon.url_image">
-            <h3>No. {{pokemon.id}}: {{pokemon.pokemon}}</h3>
-            <ul>
-                <li>HP: {{pokemon.hp}}</li>
-                <li>Type: {{pokemon.type_1}}</li>
-                <li v-if="pokemon.type_2 !== 'NA'">Second Type: {{pokemon.type_2}}</li>
-                <li>Attack: {{pokemon.attack}}</li>
-                <li>Defense: {{pokemon.defense}}</li>
-                <li>Special Attack: {{pokemon.special_attack}}</li>
-                <li>Special Defense: {{pokemon.special_defense}}</li>
-                <li>Speed: {{pokemon.speed}}</li>
-            </ul>
-        </li>
-    </div>
+  <li class="pokemon">
+    <article :style="{ background: pokemon.color_1 }">
+      <img :src="pokemon.url_image">
+      <div>
+        <h3>{{pokemon.pokemon}}</h3>
+        <p>A:{{ pokemon.attack}} D:{{ pokemon.defense}}</p>
+      </div>
+    </article>
+  </li>
 </template>
 
 <script>
 export default {
-  props: ['pokemon', 'filter']
+  props: ['pokemon']
 };
 </script>
+
+<style>
+.pokemon {
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  min-height: 150px;
+  min-width: 150px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.pokemon article {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  overflow: hidden;
+}
+.pokemon h3 {
+  font-size: 12pt;
+  margin: 0;
+}
+.pokemon:hover {
+  background: #aaa;
+}
+.pokemon img {
+  width: 60px;
+  margin-right: 5px;
+}
+</style>

@@ -1,24 +1,22 @@
 <template>
-    <div>
-        <h2>{{pokemonTiles.length}} Pokemon for you to look at.</h2>
-        <ul>
-            <Tile
-                v-for="pokemon in pokemonTiles"
-                v-bind:key="pokemon.id"
-                :pokemon="pokemon"
-                :filter="filter"
-            />
-        </ul>
-    </div>
+  <ul class="results">
+    <Tile
+      v-for="pokemon in list"
+      :key="pokemon.pokemon"
+      :pokemon="pokemon"
+    />
+  </ul>
 </template>
 
 <script>
-import Tile from './Tile.vue';
-
+import Tile from './Tile';
 export default {
-  props: ['pokemonTiles', 'filter'],
-  components: {
-    Tile
-  }
+  props: ['list'],
+  components: { Tile }
 };
 </script>
+
+<style>
+.results {
+  list-style: none;
+}
