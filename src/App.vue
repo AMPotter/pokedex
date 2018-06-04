@@ -17,7 +17,7 @@ export default {
     Results
   },
   data() {
-    return { 
+    return {
       pokemon,
       sort: {
         prop: 'pokemon'

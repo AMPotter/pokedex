@@ -5,7 +5,7 @@
       <option value="pokemon">name</option>
       <option value="type_1">type</option>
       <option value="attack">attack</option>
-      <option value="defence">defence</option>
+      <option value="defense">defence</option>
     </select>
   </span>
 </template>
