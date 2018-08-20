@@ -10,6 +10,7 @@
 
 <script>
 import Tile from './Tile';
+
 export default {
   props: ['list'],
   components: { Tile }

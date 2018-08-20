@@ -27,19 +27,23 @@ export default {
   text-align: center;
   cursor: pointer;
 }
+
 .pokemon article {
   width: 100%;
   height: 100%;
   padding: 5px;
   overflow: hidden;
 }
+
 .pokemon h3 {
   font-size: 12pt;
   margin: 0;
 }
+
 .pokemon:hover {
   background: #aaa;
 }
+
 .pokemon img {
   width: 60px;
   margin-right: 5px;

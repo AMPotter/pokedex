@@ -8,6 +8,7 @@
 <script>
 import Sort from './Sort';
 import FilterControl from './FilterControl';
+
 export default {
   components: { Sort, FilterControl },
   props: ['sort', 'filter', 'types']

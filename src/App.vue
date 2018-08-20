@@ -11,11 +11,13 @@
 import Header from './components/Header';
 import Results from './components/Results';
 import pokemon from './pokemon';
+
 export default {
   components: {
     Header,
     Results
   },
+
   data() {
     return {
       pokemon,
@@ -29,6 +31,7 @@ export default {
       }
     };
   },
+
   computed: {
     list() {
       return this.filtered.slice().sort((a, b) => {
